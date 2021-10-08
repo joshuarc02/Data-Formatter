@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App">
    <children>
       <Label alignment="CENTER" text="What would you like to do?" wrapText="true">
          <font>
@@ -25,17 +24,17 @@
          <children>
             <StackPane prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" text="New Format" wrapText="true" />
+                  <Button fx:id="newFormat" mnemonicParsing="false" onAction="#newFromatScene" text="New Format" wrapText="true" />
                </children>
             </StackPane>
             <StackPane prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" text="Edit Format" wrapText="true" />
+                  <Button fx:id="editFormat" mnemonicParsing="false" onAction="#editFormatScene" text="Edit Format" wrapText="true" />
                </children>
             </StackPane>
             <StackPane prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" text="Use Format" wrapText="true" />
+                  <Button fx:id="useFormat" mnemonicParsing="false" onAction="#useFormatScene" text="Use Format" wrapText="true" />
                </children>
             </StackPane>
          </children>
